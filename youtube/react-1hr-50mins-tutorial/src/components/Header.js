@@ -11,13 +11,12 @@ import React from 'react'
 
     return (
         <header className='header'>
-            {/* <h1 style = {{color: 'red', backgroundColor: 'black'}}>{title}</h1> */}
-            {/* <h1 style = {headingStyle}>{title}</h1>  */}
             <h1>{title}</h1>
             {location.pathname === '/' && <Button color= {showAdd ? 'red' : 'green'} text = {showAdd ? 'Close' : 'Add'} onClick ={onAdd}/>}
-            {/* <Button color='red' text = "Hoopah!" />
-            <Button color='orange' text = "Yep." /> */}
-        
+
+            {/* TWO ALTERNATE WAYS TO ADD CSS STYLING */}
+            {/* <h1 style = {{color: 'red', backgroundColor: 'black'}}>{title}</h1> */}
+            {/* <h1 style = {headingStyle}>{title}</h1>  */}
         </header>
     )
 }
@@ -32,7 +31,7 @@ Header.propTypes = { // how to add types and requirements to make your program m
     title: PropTypes.string.isRequired,
 }
 
-//CSS in JS
+//CSS in JS - creating a CSS variable that's referenced in your statement
 // const headingStyle = {
 //     color: 'red', backgroundColor: 'black'
 // }
